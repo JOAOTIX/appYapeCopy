@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_splash">
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.joaodev.yapecopy.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_navigation_splash_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.joaodev.yapecopy.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.joaodev.yapecopy.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_yapear"
+            app:destination="@id/navigation_yapear" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_yapear"
+        android:name="com.joaodev.yapecopy.ui.Yapear"
+        android:label="fragment_yapear"
+        tools:layout="@layout/fragment_yapear" >
+        <action
+            android:id="@+id/action_navigation_yapear_to_navigation_yapearA"
+            app:destination="@id/navigation_yapearA" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_yapearA"
+        android:name="com.joaodev.yapecopy.ui.YapearA"
+        android:label="fragment_yapear_a"
+        tools:layout="@layout/fragment_yapear_a" >
+        <action
+            android:id="@+id/action_navigation_yapearA_to_pago"
+            app:destination="@id/navigation_pago" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_pago"
+        android:name="com.joaodev.yapecopy.ui.Pago"
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" />
+</navigation>

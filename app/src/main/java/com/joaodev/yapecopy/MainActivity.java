@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Require navigation fragments -> no muestra tabs en esas pantallas
         navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
             int id = navDestination.getId();
-            if (id == R.id.navigation_splash || id == R.id.navigation_login || id == R.id.navigation_home || id== R.id.navigation_yapear || id== R.id.navigation_yapearA) {
+            if (id == R.id.navigation_splash || id == R.id.navigation_login || id == R.id.navigation_home || id== R.id.navigation_yapear || id== R.id.navigation_yapearA || id==R.id.navigation_pago) {
                 navView.setVisibility(View.INVISIBLE);
             } else {
                 navView.setVisibility(View.VISIBLE);

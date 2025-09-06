@@ -43,10 +43,5 @@ public class Pago extends Fragment {
         context = getContext();
         navController = Navigation.findNavController(view);
 
-        Button btnpago= view.findViewById(R.id.btnPago);
-
-        btnpago.setOnClickListener(v -> {
-            navController.navigate(R.id.navigation_pago);
-        });
     }
 }

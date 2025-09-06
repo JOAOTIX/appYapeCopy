@@ -44,7 +44,7 @@ public class YapearA extends Fragment {
         binding.btnPago.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.navigation_pago);
+                navController.navigate(R.id.action_navigation_yapearA_to_pago);
             }
         });
     }
